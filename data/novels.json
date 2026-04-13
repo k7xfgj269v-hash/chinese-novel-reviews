@@ -1,0 +1,67 @@
+[
+  {
+    "slug": "coiling-dragon",
+    "title": "Coiling Dragon",
+    "author": "I Eat Tomatoes",
+    "genre": ["cultivation", "fantasy", "xianxia"],
+    "rating": 4.5,
+    "status": "completed",
+    "chapters": 806,
+    "summary": "Linley is a young noble of a fallen clan who dreams of becoming a powerful warrior. Through a series of fortunate encounters and relentless cultivation, he rises from obscurity to become a legendary figure in a world filled with magic, dragons, and gods.",
+    "review": "Coiling Dragon is a classic xianxia novel that set the standard for the genre. The cultivation system is well-developed, and the progression from mortal to godhood is satisfying. While the characters can be somewhat one-dimensional, the world-building and power scaling are excellent. A must-read for cultivation novel enthusiasts.",
+    "similar": ["stellar-transformations", "against-the-gods", "desolate-era"],
+    "tags": ["op-mc", "dragons", "reincarnation", "magic", "cultivation"]
+  },
+  {
+    "slug": "against-the-gods",
+    "title": "Against the Gods",
+    "author": "Mars Gravity",
+    "genre": ["cultivation", "harem", "action"],
+    "rating": 4.3,
+    "status": "ongoing",
+    "chapters": 1800,
+    "summary": "Yun Che, a young man from modern Earth, is reincarnated into a cultivation world with a mysterious power. Armed with knowledge from his previous life and a mysterious artifact, he embarks on a journey to defy the heavens and protect those he loves.",
+    "review": "Against the Gods features an overpowered protagonist with a compelling harem element. The story starts strong with excellent world-building and character development. However, some readers find the later arcs repetitive. The novel excels in creating emotional moments and has some of the best romantic subplots in the genre.",
+    "similar": ["martial-world", "true-martial-world", "coiling-dragon"],
+    "tags": ["harem", "op-mc", "reincarnation", "revenge", "romance"]
+  },
+  {
+    "slug": "stellar-transformations",
+    "title": "Stellar Transformations",
+    "author": "I Eat Tomatoes",
+    "genre": ["cultivation", "fantasy", "xianxia"],
+    "rating": 4.4,
+    "status": "completed",
+    "chapters": 683,
+    "summary": "Qin Yu is born without the ability to practice internal cultivation techniques. However, he discovers an alternative path through body cultivation and eventually creates his own cultivation method, leading him on a journey across multiple universes.",
+    "review": "Another masterpiece from I Eat Tomatoes, Stellar Transformations features unique cultivation systems and epic scale. The protagonist's journey from mortal to universe creator is awe-inspiring. The novel's strength lies in its innovative power systems and the sense of wonder it creates as the scope expands from planet to universe.",
+    "similar": ["coiling-dragon", "swallowed-star", "desolate-era"],
+    "tags": ["op-mc", "body-cultivation", "universe-creation", "martial-arts"]
+  },
+  {
+    "slug": "desolate-era",
+    "title": "Desolate Era",
+    "author": "I Eat Tomatoes",
+    "genre": ["cultivation", "xianxia", "epic"],
+    "rating": 4.6,
+    "status": "completed",
+    "chapters": 1451,
+    "summary": "Ji Ning is reincarnated into a world of cultivation with memories of his past life. Born into a noble clan facing destruction, he must cultivate quickly to protect his family and uncover the secrets of his reincarnation.",
+    "review": "Desolate Era is considered one of I Eat Tomatoes' best works. The cultivation system is intricate, the characters are well-developed, and the pacing is excellent. The novel balances personal growth with epic world-saving stakes. The ending is particularly satisfying, tying together all plot threads beautifully.",
+    "similar": ["stellar-transformations", "coiling-dragon", "swallowed-star"],
+    "tags": ["reincarnation", "swordsmanship", "dao-comprehension", "epic"]
+  },
+  {
+    "slug": "swallowed-star",
+    "title": "Swallowed Star",
+    "author": "I Eat Tomatoes",
+    "genre": ["sci-fi", "cultivation", "apocalypse"],
+    "rating": 4.2,
+    "status": "completed",
+    "chapters": 1426,
+    "summary": "In a future Earth devastated by mysterious viruses and alien monsters, Luo Feng discovers his psychic abilities and begins cultivating to protect humanity and explore the vast universe.",
+    "review": "Swallowed Star successfully blends cultivation elements with science fiction. The transition from post-apocalyptic Earth to cosmic-scale conflicts is handled well. While the beginning can be slow, the story gains momentum as it expands in scope. A unique take on the cultivation genre with sci-fi elements.",
+    "similar": ["desolate-era", "stellar-transformations", "forty-millenniums-of-cultivation"],
+    "tags": ["sci-fi", "psychic", "apocalypse", "alien", "space-opera"]
+  }
+]
