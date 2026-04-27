@@ -3,260 +3,909 @@
     "slug": "a-record-of-a-mortals-journey-to-immortality",
     "title": "A Record of a Mortal's Journey to Immortality",
     "author": "Wang Yu",
-    "genre": ["cultivation", "xianxia", "classic", "slow-burn"],
+    "genre": [
+      "cultivation",
+      "xianxia",
+      "classic",
+      "slow-burn"
+    ],
     "rating": 4.3,
     "status": "completed",
     "chapters": 2455,
     "summary": "Han Li, an ordinary mortal with mediocre talent, enters the world of cultivation through sheer determination and careful planning.",
     "review": "A Record of a Mortal's Journey to Immortality is the definitive 'mortal cultivation' novel that established many tropes of the genre.",
-    "similar": ["i-shall-seal-the-heavens", "renegade-immortal"],
-    "tags": ["mortal-protagonist", "cautious-mc", "classic"]
+    "similar": [
+      "i-shall-seal-the-heavens",
+      "renegade-immortal"
+    ],
+    "tags": [
+      "mortal-protagonist",
+      "cautious-mc",
+      "classic"
+    ]
   },
   {
     "slug": "i-shall-seal-the-heavens",
     "title": "I Shall Seal the Heavens",
     "author": "Er Gen",
-    "genre": ["cultivation", "xianxia", "comedy", "philosophical"],
+    "genre": [
+      "cultivation",
+      "xianxia",
+      "comedy",
+      "philosophical"
+    ],
     "rating": 4.6,
     "status": "completed",
     "chapters": 1614,
     "summary": "Meng Hao, a scholar forced into the world of cultivation, uses his intelligence and unconventional methods to survive and thrive.",
     "review": "I Shall Seal the Heavens is widely regarded as one of the best xianxia novels ever written.",
-    "similar": ["renegade-immortal", "a-will-eternal"],
-    "tags": ["humor", "philosophical", "robbing", "scholar-mc"]
+    "similar": [
+      "renegade-immortal",
+      "a-will-eternal"
+    ],
+    "tags": [
+      "humor",
+      "philosophical",
+      "robbing",
+      "scholar-mc"
+    ]
   },
   {
     "slug": "renegade-immortal",
     "title": "Renegade Immortal",
     "author": "Er Gen",
-    "genre": ["cultivation", "xianxia", "dark", "tragic"],
+    "genre": [
+      "cultivation",
+      "xianxia",
+      "dark",
+      "tragic"
+    ],
     "rating": 4.4,
     "status": "ongoing",
     "chapters": 2088,
     "summary": "Wang Lin, born with mediocre talent, experiences profound loss that shapes his path to immortality.",
     "review": "Renegade Immortal is Er Gen's darkest and most emotionally complex work.",
-    "similar": ["i-shall-seal-the-heavens", "a-will-eternal"],
-    "tags": ["dark", "tragic", "lonely-mc", "philosophical"]
+    "similar": [
+      "i-shall-seal-the-heavens",
+      "a-will-eternal"
+    ],
+    "tags": [
+      "dark",
+      "tragic",
+      "lonely-mc",
+      "philosophical"
+    ]
   },
   {
     "slug": "a-will-eternal",
     "title": "A Will Eternal",
     "author": "Er Gen",
-    "genre": ["cultivation", "xianxia", "comedy", "slice-of-life"],
+    "genre": [
+      "cultivation",
+      "xianxia",
+      "comedy",
+      "slice-of-life"
+    ],
     "rating": 4.2,
     "status": "ongoing",
     "chapters": 1314,
     "summary": "Bai Xiaochun is a cowardly young man who values his life above all else.",
     "review": "A Will Eternal represents Er Gen's successful foray into comedic xianxia.",
-    "similar": ["i-shall-seal-the-heavens", "renegade-immortal"],
-    "tags": ["comedy", "cowardly-mc", "slice-of-life", "humor"]
+    "similar": [
+      "i-shall-seal-the-heavens",
+      "renegade-immortal"
+    ],
+    "tags": [
+      "comedy",
+      "cowardly-mc",
+      "slice-of-life",
+      "humor"
+    ]
   },
   {
     "slug": "cultivation-chat-group",
     "title": "Cultivation Chat Group",
     "author": "Legend of the Paladin",
-    "genre": ["modern", "cultivation", "comedy", "slice-of-life"],
+    "genre": [
+      "modern",
+      "cultivation",
+      "comedy",
+      "slice-of-life"
+    ],
     "rating": 4.1,
     "status": "ongoing",
     "chapters": 3380,
     "summary": "Song Shuhang, an ordinary college student, accidentally joins a chat group of cultivators.",
     "review": "Cultivation Chat Group is a brilliant fusion of modern life and cultivation tropes.",
-    "similar": ["a-will-eternal", "the-kings-avatar"],
-    "tags": ["modern", "comedy", "chat-group", "college-student"]
+    "similar": [
+      "a-will-eternal",
+      "the-kings-avatar"
+    ],
+    "tags": [
+      "modern",
+      "comedy",
+      "chat-group",
+      "college-student"
+    ]
   },
   {
     "slug": "the-kings-avatar",
     "title": "The King's Avatar",
     "author": "Butterfly Blue",
-    "genre": ["esports", "gaming", "modern", "teamwork"],
+    "genre": [
+      "esports",
+      "gaming",
+      "modern",
+      "teamwork"
+    ],
     "rating": 4.5,
     "status": "completed",
     "chapters": 1728,
     "summary": "Ye Xiu, a legendary professional gamer forced to retire, starts over from scratch.",
     "review": "The King's Avatar is the definitive esports novel that transcends its genre.",
-    "similar": ["thriller-paradise", "super-player"],
-    "tags": ["esports", "gaming", "professional", "teamwork"]
+    "similar": [
+      "thriller-paradise",
+      "super-player"
+    ],
+    "tags": [
+      "esports",
+      "gaming",
+      "professional",
+      "teamwork"
+    ]
   },
   {
     "slug": "lord-of-the-mysteries",
     "title": "Lord of the Mysteries",
     "author": "Speaking Elbow",
-    "genre": ["mystery", "lovecraftian", "steampunk", "system"],
+    "genre": [
+      "mystery",
+      "lovecraftian",
+      "steampunk",
+      "system"
+    ],
     "rating": 4.8,
     "status": "completed",
     "chapters": 1394,
     "summary": "Zhou Mingrui wakes up in Victorian-era England-like world with a mysterious system.",
     "review": "Lord of the Mysteries is a genre-defining masterpiece.",
-    "similar": ["nights-nomenclature", "thriller-paradise"],
-    "tags": ["mystery", "lovecraftian", "steampunk", "system"]
+    "similar": [
+      "nights-nomenclature",
+      "thriller-paradise"
+    ],
+    "tags": [
+      "mystery",
+      "lovecraftian",
+      "steampunk",
+      "system"
+    ]
   },
   {
     "slug": "nights-nomenclature",
     "title": "Night's Nomenclature",
     "author": "Speaking Elbow",
-    "genre": ["cyberpunk", "supernatural", "modern", "mystery"],
+    "genre": [
+      "cyberpunk",
+      "supernatural",
+      "modern",
+      "mystery"
+    ],
     "rating": 4.3,
     "status": "ongoing",
     "chapters": 900,
     "summary": "In a near-future cyberpunk world, Qing Chen discovers he can travel between worlds.",
     "review": "Night's Nomenclature continues Speaking Elbow's tradition of innovative world-building.",
-    "similar": ["lord-of-the-mysteries", "global-evolution"],
-    "tags": ["cyberpunk", "dual-world", "mystery", "supernatural"]
+    "similar": [
+      "lord-of-the-mysteries",
+      "global-evolution"
+    ],
+    "tags": [
+      "cyberpunk",
+      "dual-world",
+      "mystery",
+      "supernatural"
+    ]
   },
   {
     "slug": "global-evolution",
     "title": "Global Evolution",
     "author": "Biting Dog",
-    "genre": ["apocalypse", "sci-fi", "hard-sci-fi", "survival"],
+    "genre": [
+      "apocalypse",
+      "sci-fi",
+      "hard-sci-fi",
+      "survival"
+    ],
     "rating": 4.0,
     "status": "completed",
     "chapters": 320,
     "summary": "When a mysterious red fog envelops Earth, all life begins evolving at an accelerated rate.",
     "review": "Global Evolution stands out in the apocalypse genre for its hard sci-fi approach.",
-    "similar": ["nights-nomenclature", "i-have-a-mansion"],
-    "tags": ["hard-sci-fi", "apocalypse", "evolution", "scientific"]
+    "similar": [
+      "nights-nomenclature",
+      "i-have-a-mansion"
+    ],
+    "tags": [
+      "hard-sci-fi",
+      "apocalypse",
+      "evolution",
+      "scientific"
+    ]
   },
   {
     "slug": "i-have-a-mansion",
     "title": "I Have a Mansion in the Post-apocalyptic World",
     "author": "Morning Star LL",
-    "genre": ["apocalypse", "sci-fi", "kingdom-building", "technology"],
+    "genre": [
+      "apocalypse",
+      "sci-fi",
+      "kingdom-building",
+      "technology"
+    ],
     "rating": 3.9,
     "status": "ongoing",
     "chapters": 1800,
     "summary": "Jiang Chen gains the ability to travel between modern Earth and a post-apocalyptic world.",
     "review": "I Have a Mansion is a satisfying kingdom-building novel with a unique dual-world mechanic.",
-    "similar": ["global-evolution", "the-legendary-mechanic"],
-    "tags": ["kingdom-building", "dual-world", "technology", "apocalypse"]
+    "similar": [
+      "global-evolution",
+      "the-legendary-mechanic"
+    ],
+    "tags": [
+      "kingdom-building",
+      "dual-world",
+      "technology",
+      "apocalypse"
+    ]
   },
   {
     "slug": "the-legendary-mechanic",
     "title": "The Legendary Mechanic",
     "author": "Qi Peijia",
-    "genre": ["sci-fi", "gaming", "system", "mecha"],
+    "genre": [
+      "sci-fi",
+      "gaming",
+      "system",
+      "mecha"
+    ],
     "rating": 4.4,
     "status": "completed",
     "chapters": 1462,
     "summary": "Han Xiao, a professional gamer, finds himself transported into the game world as an NPC mechanic.",
     "review": "The Legendary Mechanic is a masterclass in meta-gaming and faction-building.",
-    "similar": ["reincarnation-paradise", "the-kings-avatar"],
-    "tags": ["gaming", "mecha", "faction-building", "meta"]
+    "similar": [
+      "reincarnation-paradise",
+      "the-kings-avatar"
+    ],
+    "tags": [
+      "gaming",
+      "mecha",
+      "faction-building",
+      "meta"
+    ]
   },
   {
     "slug": "reincarnation-paradise",
     "title": "Reincarnation Paradise",
     "author": "That Mosquito",
-    "genre": ["action", "system", "infinite-flow", "dark"],
+    "genre": [
+      "action",
+      "system",
+      "infinite-flow",
+      "dark"
+    ],
     "rating": 4.2,
     "status": "ongoing",
     "chapters": 3000,
     "summary": "Su Xiao is forced into the Reincarnation Paradise, a system that sends contractors to different worlds.",
     "review": "Reincarnation Paradise is a standout in the infinite flow genre.",
-    "similar": ["thriller-paradise", "lord-of-the-mysteries"],
-    "tags": ["infinite-flow", "assassin", "dark", "system"]
+    "similar": [
+      "thriller-paradise",
+      "lord-of-the-mysteries"
+    ],
+    "tags": [
+      "infinite-flow",
+      "assassin",
+      "dark",
+      "system"
+    ]
   },
   {
     "slug": "the-divine-doctor",
     "title": "The Divine Doctor",
     "author": "Angry Banana",
-    "genre": ["historical", "medical", "business", "romance"],
+    "genre": [
+      "historical",
+      "medical",
+      "business",
+      "romance"
+    ],
     "rating": 4.1,
     "status": "ongoing",
     "chapters": 1200,
     "summary": "Ning Yi, a modern doctor, transmigrates into the body of a useless son-in-law in ancient China.",
     "review": "The Divine Doctor successfully blends medical drama with historical fiction.",
-    "similar": ["joy-of-life", "a-record-of-a-mortals-journey-to-immortality"],
-    "tags": ["medical", "historical", "business", "transmigration"]
+    "similar": [
+      "joy-of-life",
+      "a-record-of-a-mortals-journey-to-immortality"
+    ],
+    "tags": [
+      "medical",
+      "historical",
+      "business",
+      "transmigration"
+    ]
   },
   {
     "slug": "joy-of-life",
     "title": "Joy of Life",
     "author": "Mao Ni",
-    "genre": ["historical", "political", "wuxia", "comedy"],
+    "genre": [
+      "historical",
+      "political",
+      "wuxia",
+      "comedy"
+    ],
     "rating": 4.5,
     "status": "completed",
     "chapters": 747,
     "summary": "Fan Xian, a modern man reborn into ancient China, uses his knowledge to navigate political intrigues.",
     "review": "Joy of Life is a masterpiece of historical fiction that balances serious drama with humor.",
-    "similar": ["the-divine-doctor", "a-record-of-a-mortals-journey-to-immortality"],
-    "tags": ["historical", "political", "comedy", "transmigration"]
+    "similar": [
+      "the-divine-doctor",
+      "a-record-of-a-mortals-journey-to-immortality"
+    ],
+    "tags": [
+      "historical",
+      "political",
+      "comedy",
+      "transmigration"
+    ]
   },
   {
     "slug": "thriller-paradise",
     "title": "Thriller Paradise",
     "author": "Three Days Two Awakenings",
-    "genre": ["horror", "gaming", "mystery", "psychological"],
+    "genre": [
+      "horror",
+      "gaming",
+      "mystery",
+      "psychological"
+    ],
     "rating": 4.3,
     "status": "ongoing",
     "chapters": 1500,
     "summary": "Feng Buzhou enters a virtual reality horror game where death in the game means death in reality.",
     "review": "Thriller Paradise is a psychological horror masterpiece that transcends the gaming genre.",
-    "similar": ["reincarnation-paradise", "lord-of-the-mysteries"],
-    "tags": ["horror", "psychological", "gaming", "mystery"]
+    "similar": [
+      "reincarnation-paradise",
+      "lord-of-the-mysteries"
+    ],
+    "tags": [
+      "horror",
+      "psychological",
+      "gaming",
+      "mystery"
+    ]
   },
   {
     "slug": "super-player",
     "title": "Super Player",
     "author": "Lost Leaves",
-    "genre": ["gaming", "mmorpg", "action", "teamwork"],
+    "genre": [
+      "gaming",
+      "mmorpg",
+      "action",
+      "teamwork"
+    ],
     "rating": 3.8,
     "status": "ongoing",
     "chapters": 2000,
     "summary": "Lin Tian, an ordinary office worker, becomes a professional gamer in a popular MMORPG.",
     "review": "Super Player delivers solid, traditional MMORPG storytelling.",
-    "similar": ["the-kings-avatar", "the-legendary-mechanic"],
-    "tags": ["mmorpg", "professional-gaming", "teamwork", "strategy"]
+    "similar": [
+      "the-kings-avatar",
+      "the-legendary-mechanic"
+    ],
+    "tags": [
+      "mmorpg",
+      "professional-gaming",
+      "teamwork",
+      "strategy"
+    ]
   },
   {
     "slug": "sacred-ruins",
     "title": "Sacred Ruins",
     "author": "Chen Dong",
-    "genre": ["cultivation", "apocalypse", "mythology", "epic"],
+    "genre": [
+      "cultivation",
+      "apocalypse",
+      "mythology",
+      "epic"
+    ],
     "rating": 4.0,
     "status": "ongoing",
     "chapters": 1800,
     "summary": "In a world where spiritual energy returns to Earth, ancient myths become reality.",
     "review": "Sacred Ruins represents Chen Dong's evolution as an author.",
-    "similar": ["perfect-world", "battle-through-the-heavens"],
-    "tags": ["mythology", "apocalypse", "epic", "modern-cultivation"]
+    "similar": [
+      "perfect-world",
+      "battle-through-the-heavens"
+    ],
+    "tags": [
+      "mythology",
+      "apocalypse",
+      "epic",
+      "modern-cultivation"
+    ]
   },
   {
     "slug": "perfect-world",
     "title": "Perfect World",
     "author": "Chen Dong",
-    "genre": ["cultivation", "xianxia", "epic", "tragic"],
+    "genre": [
+      "cultivation",
+      "xianxia",
+      "epic",
+      "tragic"
+    ],
     "rating": 4.2,
     "status": "completed",
     "chapters": 2018,
     "summary": "Shi Hao is born into a world of ancient powers and divine beasts.",
     "review": "Perfect World is Chen Dong's most emotionally complex work.",
-    "similar": ["sacred-ruins", "desolate-era"],
-    "tags": ["epic", "tragic", "mythology", "emotional"]
+    "similar": [
+      "sacred-ruins",
+      "battle-through-the-heavens"
+    ],
+    "tags": [
+      "epic",
+      "tragic",
+      "mythology",
+      "emotional"
+    ]
   },
   {
     "slug": "battle-through-the-heavens",
     "title": "Battle Through the Heavens",
     "author": "Heavenly Silkworm Potato",
-    "genre": ["cultivation", "xianxia", "classic", "revenge"],
+    "genre": [
+      "cultivation",
+      "xianxia",
+      "classic",
+      "revenge"
+    ],
     "rating": 4.0,
     "status": "completed",
     "chapters": 1644,
     "summary": "Xiao Yan, a cultivation genius who loses his talent, makes a dramatic comeback.",
     "review": "Battle Through the Heavens is the novel that popularized the 'trash to treasure' trope.",
-    "similar": ["wu-dong-qian-kun", "against-the-gods"],
-    "tags": ["classic", "revenge", "alchemy", "mentor"]
+    "similar": [
+      "wu-dong-qian-kun",
+      "perfect-world"
+    ],
+    "tags": [
+      "classic",
+      "revenge",
+      "alchemy",
+      "mentor"
+    ]
   },
   {
     "slug": "wu-dong-qian-kun",
     "title": "Wu Dong Qian Kun",
     "author": "Heavenly Silkworm Potato",
-    "genre": ["cultivation", "xianxia", "martial-arts", "family"],
+    "genre": [
+      "cultivation",
+      "xianxia",
+      "martial-arts",
+      "family"
+    ],
     "rating": 3.9,
     "status": "completed",
     "chapters": 1327,
     "summary": "Lin Dong, born into a declining martial arts family, discovers a mysterious stone.",
     "review": "Wu Dong Qian Kun follows Heavenly Silkworm Potato's successful formula.",
-    "similar": ["battle-through-the-heavens", "stellar-transformations"],
-    "tags": ["martial-arts", "family", "stone-mc", "consistent"]
+    "similar": [
+      "battle-through-the-heavens",
+      "a-will-eternal"
+    ],
+    "tags": [
+      "martial-arts",
+      "family",
+      "stone-mc",
+      "consistent"
+    ]
+  },
+  {
+    "slug": "release-that-witch",
+    "title": "Release that Witch",
+    "author": "Er Mu",
+    "genre": [
+      "kingdom-building",
+      "fantasy",
+      "political",
+      "sci-fi"
+    ],
+    "rating": 4.5,
+    "status": "completed",
+    "chapters": 1496,
+    "summary": "Roland, a modern engineer reborn as a prince in a medieval fantasy world, uses science and technology to build a kingdom and challenge the church authority.",
+    "review": "Release that Witch is the gold standard for kingdom-building novels in Chinese web fiction. The technological progression from gunpowder to steam engines to electricity is meticulously researched and immensely satisfying. The witch-based magic system is creative and well-integrated with the scientific framework, creating strategic combinations that reward careful reading. The political maneuvering against the church and neighboring kingdoms adds layers of tension that elevate it beyond a simple tech-uplift story.",
+    "similar": [
+      "i-have-a-mansion",
+      "the-legendary-mechanic"
+    ],
+    "tags": [
+      "kingdom-building",
+      "science",
+      "witches",
+      "technological-progression"
+    ]
+  },
+  {
+    "slug": "reverend-insanity",
+    "title": "Reverend Insanity",
+    "author": "Gu Zhen Ren",
+    "genre": [
+      "cultivation",
+      "xianxia",
+      "dark",
+      "strategy"
+    ],
+    "rating": 4.7,
+    "status": "ongoing",
+    "chapters": 2334,
+    "summary": "Fang Yuan, a cunning and ruthless Gu Master reborn with five hundred years of memories, pursues immortality with cold pragmatism and strategic brilliance.",
+    "review": "Reverend Insanity is a monument to anti-hero storytelling in Chinese web fiction. The Gu-based power system is deeply intricate, with each Gu worm offering unique abilities that combine in endlessly creative ways. Fang Yuan unapologetically selfish and calculating approach creates a genuinely unpredictable narrative where no character is safe. Though controversial for its dark themes and morally gray protagonist, the novel masterful plotting and unforgettable worldbuilding make it essential reading for fans of strategic cultivation stories.",
+    "similar": [
+      "renegade-immortal",
+      "warlock-of-the-magus-world"
+    ],
+    "tags": [
+      "anti-hero",
+      "strategic",
+      "gu-magic",
+      "pragmatic-mc"
+    ]
+  },
+  {
+    "slug": "warlock-of-the-magus-world",
+    "title": "Warlock of the Magus World",
+    "author": "The Plagiarist",
+    "genre": [
+      "fantasy",
+      "system",
+      "dark",
+      "sci-fi"
+    ],
+    "rating": 4.3,
+    "status": "completed",
+    "chapters": 1200,
+    "summary": "Leylin Farlier, a transmigrator armed with an intelligent AI chip, cuts a bloody path through the brutal world of magi using scientific experimentation to advance his power.",
+    "review": "Warlock of the Magus World offers one of the most satisfying progression systems in web fiction thanks to the AI chip that lets the protagonist analyze and optimize with ruthless efficiency. What sets the novel apart is its commitment to scientific methodology within a magical framework every spell potion and experiment is treated with rigor. The morally ambiguous protagonist and genuinely dangerous world make every advancement feel earned and precarious.",
+    "similar": [
+      "reverend-insanity",
+      "the-legendary-mechanic"
+    ],
+    "tags": [
+      "anti-hero",
+      "ai-chip",
+      "experimentation",
+      "transmigration"
+    ]
+  },
+  {
+    "slug": "forty-millenniums-of-cultivation",
+    "title": "Forty Millenniums of Cultivation",
+    "author": "Crouching Dragon",
+    "genre": [
+      "sci-fi",
+      "cultivation",
+      "mecha",
+      "action"
+    ],
+    "rating": 4.5,
+    "status": "completed",
+    "chapters": 3546,
+    "summary": "In a universe where cultivators pilot starships and forge divine artifacts from neutron star material Li Yao rebuilds his shattered cultivation base with obsessive passion.",
+    "review": "Forty Millenniums of Cultivation is a genre-bending masterpiece that fuses xianxia cultivation with hard sci-fi. The worldbuilding is staggering ancient cultivator empires interstellar politics and a power system that seamlessly blends spiritual energy with quantum mechanics. Li Yao infectious almost maniacal passion for refining makes every crafting scene genuinely exciting. The novel exploration of cultivation ethics and the nature of civilization adds unexpected philosophical heft to the action.",
+    "similar": [
+      "swallowed-star",
+      "the-legendary-mechanic"
+    ],
+    "tags": [
+      "hard-sci-fi",
+      "cultivation-mecha",
+      "refining",
+      "passionate-mc"
+    ]
+  },
+  {
+    "slug": "swallowed-star",
+    "title": "Swallowed Star",
+    "author": "I Eat Tomatoes",
+    "genre": [
+      "sci-fi",
+      "cultivation",
+      "apocalypse",
+      "action"
+    ],
+    "rating": 4.3,
+    "status": "completed",
+    "chapters": 1390,
+    "summary": "Luo Feng rises from street-level fighter on a monster-infested future Earth to a cosmic powerhouse spanning galaxies.",
+    "review": "Swallowed Star showcases I Eat Tomatoes at his worldbuilding best taking the cultivation formula into a sci-fi setting with infectious energy. The early chapters on a desperate monster-plagued Earth create genuine tension before the scope expands to an astonishingly vast universe of alien races and cosmic powers. The progression from planetary brawler to universe-level powerhouse spans truly cosmic scales and the balance between personal power growth and large-scale alien politics keeps the narrative fresh.",
+    "similar": [
+      "forty-millenniums-of-cultivation",
+      "desolate-era"
+    ],
+    "tags": [
+      "post-apocalyptic",
+      "monster-fighting",
+      "cosmic",
+      "power-progression"
+    ]
+  },
+  {
+    "slug": "desolate-era",
+    "title": "Desolate Era",
+    "author": "I Eat Tomatoes",
+    "genre": [
+      "cultivation",
+      "xianxia",
+      "epic",
+      "martial-arts"
+    ],
+    "rating": 4.4,
+    "status": "completed",
+    "chapters": 1451,
+    "summary": "Ji Ning, a young reincarnator with a mysterious past, pursues the Dao of the Sword across countless worlds and through endless tribulations.",
+    "review": "Desolate Era showcases I Eat Tomatoes talent for crafting vast mythic worlds with coherent power systems. The sword Dao concept is explored with surprising depth each insight Ji Ning achieves feels like a genuine breakthrough rather than a hand-waved power-up. The novel scope is enormous spanning from the Three Realms to the Chaosverse yet it never loses sight of character motivations and personal stakes. The martial arts descriptions are among the most vivid in the genre.",
+    "similar": [
+      "perfect-world",
+      "martial-world"
+    ],
+    "tags": [
+      "sword-dao",
+      "reincarnation",
+      "mythical",
+      "martial-arts"
+    ]
+  },
+  {
+    "slug": "martial-world",
+    "title": "Martial World",
+    "author": "Cocooned Cow",
+    "genre": [
+      "cultivation",
+      "martial-arts",
+      "action",
+      "xianxia"
+    ],
+    "rating": 4.2,
+    "status": "completed",
+    "chapters": 2299,
+    "summary": "Lin Ming, armed with the mysterious Magic Cube, battles his way through the martial world to avenge his family and reach the peak of power.",
+    "review": "Martial World delivers some of the most electrifying tournament arcs in Chinese web fiction with combat that feels visceral and tactical. The power system based on concepts like true essence and heavenly laws is explained clearly and rewards reader investment. Lin Ming steady but never boring rise through increasingly dangerous realms makes for incredibly satisfying progression fantasy. The side characters who grow alongside him add genuine emotional weight to the journey.",
+    "similar": [
+      "against-the-gods",
+      "wu-dong-qian-kun"
+    ],
+    "tags": [
+      "tournament-arcs",
+      "martial-arts",
+      "power-progression",
+      "revenge-narrative"
+    ]
+  },
+  {
+    "slug": "against-the-gods",
+    "title": "Against the Gods",
+    "author": "Mars Gravity",
+    "genre": [
+      "cultivation",
+      "xianxia",
+      "action",
+      "romance"
+    ],
+    "rating": 4.1,
+    "status": "ongoing",
+    "chapters": 1664,
+    "summary": "Yun Che betrayed and crippled is reborn with the power of the Mirror of Samsara and vows to protect those he loves at any cost.",
+    "review": "Against the Gods is the quintessential revenge fantasy delivering cathartic payoffs with remarkable consistency. While it leans heavily into genre conventions like face-slapping and harem-building it executes them with undeniable skill each confrontation is built up and resolved satisfyingly. The romantic subplots give genuine depth to the protagonist motivations and the chapter-by-chapter cliffhangers make it one of the most addictive binge-reads in the genre.",
+    "similar": [
+      "battle-through-the-heavens",
+      "martial-world"
+    ],
+    "tags": [
+      "revenge",
+      "rebirth",
+      "face-slapping",
+      "harem"
+    ]
+  },
+  {
+    "slug": "tales-of-demons-and-gods",
+    "title": "Tales of Demons and Gods",
+    "author": "Mad Snail",
+    "genre": [
+      "cultivation",
+      "xianxia",
+      "action",
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "chapters": 599,
+    "summary": "Nie Li the strongest Demon Spiritist who died in battle is reborn back into his youth and uses his future knowledge to rewrite history and save everyone he lost.",
+    "review": "Tales of Demons and Gods pioneered the rebirth-with-future-knowledge trope that countless novels would later adopt. The time-travel premise gives the protagonist a compelling advantage without making the story feel like a guaranteed victory as his actions create unforeseen butterfly effects. The demon spirit system where characters bond with mythical beasts is creative and visually exciting. The novel popularity was greatly amplified by its manhua adaptation which introduced millions of international readers to Chinese web fiction.",
+    "similar": [
+      "against-the-gods",
+      "desolate-era"
+    ],
+    "tags": [
+      "rebirth",
+      "time-travel",
+      "demon-spirits",
+      "manhua-popular"
+    ]
+  },
+  {
+    "slug": "library-of-heavens-path",
+    "title": "Library of Heaven Path",
+    "author": "Heng Sao Tian Ya",
+    "genre": [
+      "cultivation",
+      "comedy",
+      "system",
+      "action"
+    ],
+    "rating": 4.1,
+    "status": "completed",
+    "chapters": 2596,
+    "summary": "Zhang Xuan a teacher at a cultivation academy discovers a mysterious Library that can analyze and perfect any technique or skill instantly.",
+    "review": "Library of Heaven Path is pure unapologetic feel-good dopamine in literary form. The core loop Zhang Xuan spots a flaw in someone cultivation the Library analyzes it and he casually demonstrates his genius by fixing it is endlessly satisfying. The comedy comes from the protagonist absurd accumulation of identities and the baffled reactions of everyone around him. While it is not serious xianxia it is one of the most entertaining comfort-reads in the genre.",
+    "similar": [
+      "i-shall-seal-the-heavens",
+      "a-will-eternal"
+    ],
+    "tags": [
+      "face-slapping",
+      "teacher-mc",
+      "system-novel",
+      "comedy"
+    ]
+  },
+  {
+    "slug": "omniscient-readers-viewpoint",
+    "title": "Omniscient Reader Viewpoint",
+    "author": "Sing Shong",
+    "genre": [
+      "action",
+      "mystery",
+      "system",
+      "psychological"
+    ],
+    "rating": 4.6,
+    "status": "completed",
+    "chapters": 1140,
+    "summary": "Kim Dokja the sole reader of a web novel that has suddenly come to life uses his knowledge of the story to survive the apocalypse and change its ending.",
+    "review": "Omniscient Reader Viewpoint is a love letter to reading itself exploring what it means to truly understand a story. The meta-narrative is ingeniously constructed Kim Dokja knowledge of the original novel gives him an edge but his emotional attachment to the characters creates complications the author never wrote. The writing is tightly plotted with callbacks and foreshadowing that reward careful readers. It transcends its genre origins to become a profound meditation on storytelling and the relationship between readers and characters.",
+    "similar": [
+      "lord-of-the-mysteries",
+      "the-second-coming-of-gluttony"
+    ],
+    "tags": [
+      "meta-narrative",
+      "reader-mc",
+      "apocalypse",
+      "constellations"
+    ]
+  },
+  {
+    "slug": "solo-leveling",
+    "title": "Solo Leveling",
+    "author": "Chugong",
+    "genre": [
+      "action",
+      "system",
+      "dark",
+      "gaming"
+    ],
+    "rating": 4.6,
+    "status": "completed",
+    "chapters": 270,
+    "summary": "Sung Jinwoo the weakest hunter in a world of magical gates and dungeons gains a mysterious system that lets him level up where no one else can.",
+    "review": "Solo Leveling is the novel that introduced millions of Western readers to the progression fantasy genre and its influence cannot be overstated. The system mechanics are clean and viscerally satisfying the shadow army power is spectacular and Jinwoo transformation from the weakest hunter to a monarch is unforgettable. While much shorter than typical Chinese web novels it makes every chapter count with relentless pacing and iconic action set pieces that have become legendary through the manhwa adaptation.",
+    "similar": [
+      "omniscient-readers-viewpoint",
+      "the-legendary-mechanic"
+    ],
+    "tags": [
+      "hunter",
+      "dungeons",
+      "shadow-monarch",
+      "rank-progression"
+    ]
+  },
+  {
+    "slug": "trash-of-the-counts-family",
+    "title": "Trash of the Count Family",
+    "author": "Yoo Ryeo Han",
+    "genre": [
+      "fantasy",
+      "kingdom-building",
+      "comedy",
+      "slice-of-life"
+    ],
+    "rating": 4.5,
+    "status": "ongoing",
+    "chapters": 800,
+    "summary": "Kim Roksu a modern man who wakes up as Cale Henituse a minor villain from a novel he read decides to live a lazy peaceful life by any means necessary.",
+    "review": "Trash of the Count Family is a masterclass in subverting expectations while delivering genuine emotional impact. Cale elaborate schemes to achieve his goal of doing nothing are hilarious in their complexity he accidentally builds a powerful faction while trying to be as useless as possible. The found family dynamics between Cale and his companions are genuinely heartwarming and the novel balances comedy with tense action sequences. The cat-and-mouse game with the original novel plot is brilliantly executed.",
+    "similar": [
+      "joy-of-life",
+      "release-that-witch"
+    ],
+    "tags": [
+      "found-family",
+      "villain-mc",
+      "scheming",
+      "comfort-read"
+    ]
+  },
+  {
+    "slug": "the-second-coming-of-gluttony",
+    "title": "The Second Coming of Gluttony",
+    "author": "Ro Yu-jin",
+    "genre": [
+      "action",
+      "fantasy",
+      "system",
+      "psychological"
+    ],
+    "rating": 4.4,
+    "status": "completed",
+    "chapters": 550,
+    "summary": "After hitting absolute rock bottom Seol Jihu is given a second chance in a mysterious paradise where he must fight otherworldly invaders to earn his redemption.",
+    "review": "The Second Coming of Gluttony is a redemption story that earns every emotional beat. The protagonist journey from a broken worthless existence to someone worth trusting is raw and painfully realistic. The Paradise setting combines system mechanics with genuine moral weight choices have consequences and characters remember your actions. The novel treatment of trauma growth and human connection elevates it far above standard power fantasy fare and the fight scenes are brutal with real stakes.",
+    "similar": [
+      "omniscient-readers-viewpoint",
+      "thriller-paradise"
+    ],
+    "tags": [
+      "redemption",
+      "paradise",
+      "teamwork",
+      "character-growth"
+    ]
+  },
+  {
+    "slug": "the-legendary-moonlight-sculptor",
+    "title": "The Legendary Moonlight Sculptor",
+    "author": "Nam Hee-sung",
+    "genre": [
+      "gaming",
+      "mmorpg",
+      "fantasy",
+      "comedy"
+    ],
+    "rating": 4.2,
+    "status": "completed",
+    "chapters": 1450,
+    "summary": "Lee Hyun a desperate gamer trying to support his family becomes the legendary Moonlight Sculptor in the virtual reality game Royal Road.",
+    "review": "The Legendary Moonlight Sculptor is the granddaddy of VRMMO web novels and remains one of the best. The unique sculpting class allows for creative unconventional problem-solving that sets it apart from standard warrior-or-mage protagonists. Lee Hyun penny-pinching personality driven by real-world poverty makes him an endearing underdog and his sculptures genuinely reshape the game world. The Royal Road game system is richly detailed and the balance between in-game adventures and real-world stakes keeps both narratives compelling.",
+    "similar": [
+      "the-kings-avatar",
+      "super-player"
+    ],
+    "tags": [
+      "vrmmo",
+      "sculpting",
+      "sandbox",
+      "poverty-mc"
+    ]
   }
 ]

@@ -45,11 +45,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.className}>
-      <body className="min-h-screen bg-gray-50">
+    <html lang="en" className={inter.className} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: `
+          (function() {
+            try {
+              var theme = localStorage.getItem('theme');
+              if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+              }
+            } catch(e) {}
+          })();
+        `}} />
+      </head>
+      <body className="min-h-screen bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors">
         <Navigation />
         <main className="flex-1">{children}</main>
-        <footer className="bg-gray-900 text-white py-8 mt-12">
+        <footer className="bg-gray-900 dark:bg-gray-900 text-white py-8 mt-12">
           <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="mb-4 md:mb-0">
@@ -57,8 +69,7 @@ export default function RootLayout({
                 <p className="text-gray-400">English reviews of Chinese web novels</p>
               </div>
               <div className="text-gray-400 text-sm">
-                <p>© {new Date().getFullYear()} Chinese Novel Reviews. All rights reserved.</p>
-                <p className="mt-1">Data is for demonstration purposes only.</p>
+                <p>Copyright {new Date().getFullYear()} Chinese Novel Reviews</p>
               </div>
             </div>
           </div>
