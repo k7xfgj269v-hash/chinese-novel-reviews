@@ -2,6 +2,8 @@
 
 An English review website for Chinese web novels built with Next.js 14 (App Router) and Tailwind CSS.
 
+**[Live Demo](https://chinese-novel-reviews.vercel.app/)**
+
 ## Features
 
 - **4 Page Types**: Homepage, Novel details, Genre pages, Similar recommendations
@@ -42,31 +44,30 @@ Each novel in `novels.json` has the following structure:
 
 ```json
 {
-  "slug": "coiling-dragon",
-  "title": "Coiling Dragon",
-  "author": "I Eat Tomatoes",
-  "genre": ["cultivation", "fantasy", "xianxia"],
-  "rating": 4.5,
+  "slug": "example-novel",
+  "title": "Example Novel",
+  "author": "Author Name",
+  "genre": ["cultivation", "fantasy"],
+  "rating": 4.0,
   "status": "completed",
-  "chapters": 806,
-  "summary": "Novel summary...",
-  "review": "Detailed review...",
-  "similar": ["stellar-transformations", "against-the-gods"],
-  "tags": ["op-mc", "dragons", "reincarnation"]
+  "chapters": 1200,
+  "summary": "A short summary of the novel...",
+  "review": "Your detailed review...",
+  "similar": ["another-novel-slug"],
+  "tags": ["tag1", "tag2"]
 }
 ```
 
 ## Getting Started
 
 ### Prerequisites
-- Node.js 18+ 
-- npm or yarn
+- Node.js 18+
 
 ### Installation
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/k7xfgj269v-hash/chinese-novel-reviews.git
 cd chinese-novel-reviews
 ```
 
