@@ -1,14 +1,45 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useCallback, useEffect } from 'react';
 import { Novel } from '@/lib/novels';
 
 export default function SearchBar({ novels }: { novels: Novel[] }) {
   const [query, setQuery] = useState('');
+  const [debouncedQuery, setDebouncedQuery] = useState('');
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const filtered = query.trim()
+  const handleChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setQuery(value);
+
+    if (timerRef.current) {
+      clearTimeout(timerRef.current);
+    }
+
+    timerRef.current = setTimeout(() => {
+      setDebouncedQuery(value);
+    }, 300);
+  }, []);
+
+  const handleKeyDown = useCallback((e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Escape') {
+      setQuery('');
+      setDebouncedQuery('');
+      (e.target as HTMLInputElement).blur();
+    }
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      if (timerRef.current) {
+        clearTimeout(timerRef.current);
+      }
+    };
+  }, []);
+
+  const filtered = debouncedQuery.trim()
     ? novels.filter(n => {
-        const q = query.toLowerCase();
+        const q = debouncedQuery.toLowerCase();
         return (
           n.title.toLowerCase().includes(q) ||
           n.author.toLowerCase().includes(q) ||
@@ -23,7 +54,8 @@ export default function SearchBar({ novels }: { novels: Novel[] }) {
       <input
         type="text"
         value={query}
-        onChange={e => setQuery(e.target.value)}
+        onChange={handleChange}
+        onKeyDown={handleKeyDown}
         placeholder="Search novels, authors, genres, tags..."
         className="w-full px-4 py-3 pl-10 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
       />
@@ -47,7 +79,7 @@ export default function SearchBar({ novels }: { novels: Novel[] }) {
               </a>
             ))
           ) : (
-            <div className="px-4 py-3 text-gray-500 text-sm">No novels found for &quot;{query}&quot;</div>
+            <div className="px-4 py-3 text-gray-500 text-sm">No novels found for &quot;{debouncedQuery}&quot;</div>
           )}
         </div>
       )}

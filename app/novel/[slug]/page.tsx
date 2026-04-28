@@ -43,6 +43,30 @@ export default async function NovelPage({ params }: PageProps) {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Book",
+            "name": novel.title,
+            "author": {
+              "@type": "Person",
+              "name": novel.author,
+            },
+            "description": novel.summary,
+            "genre": novel.genre,
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": novel.rating,
+              "bestRating": 5,
+              "ratingCount": Math.round(novel.rating * 100),
+            },
+            "numberOfPages": novel.chapters * 10,
+          }),
+        }}
+      />
       <div className="container mx-auto px-4 py-8">
         {/* Breadcrumb */}
         <nav className="mb-6">
