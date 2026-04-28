@@ -1,4 +1,5 @@
 import novelsData from '@/data/novels.json';
+import readingListsData from '@/data/reading-lists.json';
 
 export interface Novel {
   slug: string;
@@ -14,8 +15,20 @@ export interface Novel {
   tags: string[];
 }
 
+export interface ReadingList {
+  id: string;
+  name: string;
+  description: string;
+  slugs: string[];
+  novels: Novel[];
+  count: number;
+}
+
 // Type assertion for the imported data
 const novels: Novel[] = novelsData as Novel[];
+const rawLists: { lists: Omit<ReadingList, 'novels' | 'count'>[] } = readingListsData as {
+  lists: Omit<ReadingList, 'novels' | 'count'>[];
+};
 
 /**
  * Get all novels sorted by rating (highest first)
@@ -75,4 +88,27 @@ export function getAllNovelSlugs(): string[] {
  */
 export function getAllGenreSlugs(): string[] {
   return getAllGenres();
+}
+
+/**
+ * Get all reading lists with populated novel objects
+ */
+export function getReadingLists(): ReadingList[] {
+  return rawLists.lists.map((list) => {
+    const populatedNovels = list.slugs
+      .map((slug) => getNovelBySlug(slug))
+      .filter((n): n is Novel => n !== undefined);
+    return {
+      ...list,
+      novels: populatedNovels,
+      count: populatedNovels.length,
+    };
+  });
+}
+
+/**
+ * Get a reading list by its id with populated novel objects
+ */
+export function getReadingListById(id: string): ReadingList | undefined {
+  return getReadingLists().find((list) => list.id === id);
 }

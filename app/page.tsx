@@ -52,6 +52,30 @@ export default function Home() {
               <div className="text-gray-600 dark:text-gray-400">Genres</div>
             </div>
           </div>
+
+          {/* Rating Distribution */}
+          <div className="flex flex-wrap justify-center gap-4 mt-4">
+            <div className="bg-green-50 dark:bg-green-950/30 border border-green-200 dark:border-green-900 rounded-lg px-4 py-2 text-sm">
+              <span className="font-bold text-green-700 dark:text-green-400">
+                {novels.filter((n) => n.rating >= 4.5).length}
+              </span>
+              <span className="text-green-600 dark:text-green-400 ml-1">Top Rated (4.5+)</span>
+            </div>
+            <div className="bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-900 rounded-lg px-4 py-2 text-sm">
+              <span className="font-bold text-blue-700 dark:text-blue-400">
+                {novels.filter((n) => n.rating >= 4.0 && n.rating < 4.5).length}
+              </span>
+              <span className="text-blue-600 dark:text-blue-400 ml-1">Highly Rated (4.0-4.5)</span>
+            </div>
+            <div className="bg-yellow-50 dark:bg-yellow-950/30 border border-yellow-200 dark:border-yellow-900 rounded-lg px-4 py-2 text-sm">
+              <span className="font-bold text-yellow-700 dark:text-yellow-400">
+                {novels.filter((n) => n.rating >= 3.5 && n.rating < 4.0).length}
+              </span>
+              <span className="text-yellow-600 dark:text-yellow-400 ml-1">
+                Solid Picks (3.5-4.0)
+              </span>
+            </div>
+          </div>
         </div>
 
         {/* Genres Navigation */}

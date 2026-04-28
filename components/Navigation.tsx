@@ -66,6 +66,17 @@ export default function Navigation() {
               Home
             </Link>
 
+            <Link
+              href="/lists"
+              className={`px-3 py-2 rounded-md text-sm font-medium ${
+                isActive('/lists')
+                  ? 'bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300'
+                  : 'text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-gray-50 dark:hover:bg-gray-800'
+              }`}
+            >
+              Lists
+            </Link>
+
             {/* Genres Dropdown */}
             <div className="relative group">
               <button
@@ -198,6 +209,18 @@ export default function Navigation() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
+              </Link>
+
+              <Link
+                href="/lists"
+                className={`block px-3 py-2 rounded-md text-base font-medium ${
+                  isActive('/lists')
+                    ? 'bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300'
+                    : 'text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-gray-50 dark:hover:bg-gray-800'
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Reading Lists
               </Link>
 
               <div className="px-3 py-2">

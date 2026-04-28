@@ -1,0 +1,144 @@
+{
+  "lists": [
+    {
+      "id": "essential-starter-pack",
+      "name": "Essential Starter Pack",
+      "description": "The 8 best novels for newcomers to Chinese and Korean web novels.",
+      "slugs": [
+        "solo-leveling",
+        "coiling-dragon",
+        "omniscient-readers-viewpoint",
+        "lord-of-the-mysteries",
+        "the-kings-avatar",
+        "mother-of-learning",
+        "the-beginning-after-the-end",
+        "release-that-witch"
+      ]
+    },
+    {
+      "id": "dark-and-gritty",
+      "name": "Dark & Gritty",
+      "description": "Morally grey protagonists, ruthless worlds, and stories that aren\u2019t afraid to get their hands dirty.",
+      "slugs": [
+        "reverend-insanity",
+        "renegade-immortal",
+        "warlock-of-the-magus-world",
+        "dungeon-defense",
+        "shadow-slave",
+        "city-of-sin",
+        "god-of-slaughter",
+        "the-second-coming-of-gluttony"
+      ]
+    },
+    {
+      "id": "comedy-gold",
+      "name": "Comedy Gold",
+      "description": "The funniest web novels in the genre.",
+      "slugs": [
+        "i-shall-seal-the-heavens",
+        "a-will-eternal",
+        "library-of-heavens-path",
+        "the-strongest-system",
+        "cultivation-chat-group",
+        "trash-of-the-counts-family",
+        "nine-star-hegemon-body-art",
+        "the-legendary-moonlight-sculptor"
+      ]
+    },
+    {
+      "id": "kingdom-builders",
+      "name": "Kingdom Builders",
+      "description": "Novels about building empires, organizations, and legacies.",
+      "slugs": [
+        "release-that-witch",
+        "i-have-a-mansion",
+        "the-legendary-mechanic",
+        "trash-of-the-counts-family",
+        "overgeared",
+        "dungeon-defense"
+      ]
+    },
+    {
+      "id": "completed-masterpieces",
+      "name": "Completed Masterpieces",
+      "description": "Fully completed novels with satisfying endings.",
+      "slugs": [
+        "lord-of-the-mysteries",
+        "omniscient-readers-viewpoint",
+        "mother-of-learning",
+        "coiling-dragon",
+        "joy-of-life",
+        "desolate-era",
+        "martial-world",
+        "a-record-of-a-mortals-journey-to-immortality"
+      ]
+    },
+    {
+      "id": "sci-fi-futuristic",
+      "name": "Sci-Fi & Futuristic",
+      "description": "Sci-fi cultivation and litRPG hybrids.",
+      "slugs": [
+        "forty-millenniums-of-cultivation",
+        "swallowed-star",
+        "the-legendary-mechanic",
+        "nights-nomenclature",
+        "stellar-transformations",
+        "global-evolution",
+        "warlock-of-the-magus-world",
+        "monster-paradise"
+      ]
+    },
+    {
+      "id": "underrated-gems",
+      "name": "Underrated Gems",
+      "description": "Hidden treasures rated between 4.0 and 4.3.",
+      "slugs": [
+        "way-of-choices",
+        "ancient-godly-monarch",
+        "city-of-sin",
+        "cultivation-chat-group",
+        "god-of-slaughter",
+        "wu-dong-qian-kun"
+      ]
+    },
+    {
+      "id": "tower-climbers",
+      "name": "Tower Climbers",
+      "description": "Novels built around tower or dungeon climbing mechanics.",
+      "slugs": [
+        "solo-leveling",
+        "omniscient-readers-viewpoint",
+        "the-world-after-the-fall",
+        "thriller-paradise",
+        "reincarnation-paradise",
+        "the-second-coming-of-gluttony"
+      ]
+    },
+    {
+      "id": "romance-and-relationships",
+      "name": "Romance & Relationships",
+      "description": "Web novels with meaningful romantic subplots.",
+      "slugs": [
+        "against-the-gods",
+        "ancient-godly-monarch",
+        "joy-of-life",
+        "the-divine-doctor",
+        "the-beginning-after-the-end",
+        "trash-of-the-counts-family"
+      ]
+    },
+    {
+      "id": "short-but-perfect",
+      "name": "Short But Perfect",
+      "description": "Completed novels under 500 chapters.",
+      "slugs": [
+        "mother-of-learning",
+        "solo-leveling",
+        "the-world-after-the-fall",
+        "dungeon-defense",
+        "global-evolution",
+        "the-beginning-after-the-end"
+      ]
+    }
+  ]
+}
