@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Breadcrumb from '@/components/Breadcrumb';
 import StarIcon from '@/components/StarIcon';
 import { getReadingLists } from '@/lib/novels';
 
@@ -15,18 +16,7 @@ export default function ReadingListsPage() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-950">
       <div className="container mx-auto px-4 py-8">
-        {/* Breadcrumb */}
-        <nav aria-label="Breadcrumb" className="mb-6">
-          <ol className="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-400">
-            <li>
-              <Link href="/" className="hover:text-blue-600 dark:hover:text-blue-400">
-                Home
-              </Link>
-            </li>
-            <li>/</li>
-            <li className="text-gray-900 dark:text-gray-100 font-medium">Reading Lists</li>
-          </ol>
-        </nav>
+        <Breadcrumb items={[{ label: 'Home', href: '/' }, { label: 'Reading Lists' }]} />
 
         {/* Header */}
         <div className="mb-10">

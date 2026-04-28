@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Breadcrumb from '@/components/Breadcrumb';
 import { notFound } from 'next/navigation';
 import GenreSortControls from '@/components/GenreSortControls';
 import StarIcon from '@/components/StarIcon';
@@ -59,18 +60,7 @@ export default async function GenrePage({ params }: PageProps) {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-950">
       <div className="container mx-auto px-4 py-8">
-        {/* Breadcrumb */}
-        <nav aria-label="Breadcrumb" className="mb-6">
-          <ol className="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-400">
-            <li>
-              <Link href="/" className="hover:text-blue-600 dark:hover:text-blue-400">
-                Home
-              </Link>
-            </li>
-            <li>/</li>
-            <li className="text-gray-900 dark:text-gray-100 font-medium">{genreName} Novels</li>
-          </ol>
-        </nav>
+        <Breadcrumb items={[{ label: 'Home', href: '/' }, { label: `${genreName} Novels` }]} />
 
         {/* Genre Header */}
         <div className="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-6 mb-8">

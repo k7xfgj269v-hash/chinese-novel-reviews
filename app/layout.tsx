@@ -54,7 +54,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.className} suppressHydrationWarning>
+    <html lang="en" className={inter.className} suppressHydrationWarning style={{ visibility: 'hidden' }}>
       <head>
         <script
           dangerouslySetInnerHTML={{
@@ -65,11 +65,15 @@ export default function RootLayout({
               if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
                 document.documentElement.classList.add('dark');
               }
-            } catch(e) {}
+              document.documentElement.style.visibility = '';
+            } catch(e) {
+              document.documentElement.style.visibility = '';
+            }
           })();
         `,
           }}
         />
+        <noscript dangerouslySetInnerHTML={{ __html: '<style>html{visibility:visible}</style>' }} />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#2563eb" />
         <meta name="apple-mobile-web-app-capable" content="yes" />

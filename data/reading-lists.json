@@ -139,6 +139,90 @@
         "global-evolution",
         "the-beginning-after-the-end"
       ]
+    },
+    {
+      "id": "western-cultivation",
+      "name": "Western Cultivation",
+      "description": "English-language cultivation novels that bring xianxia tropes to Western fantasy",
+      "slugs": [
+        "mother-of-learning",
+        "shadow-slave",
+        "defiance-of-the-fall",
+        "he-who-fights-with-monsters",
+        "primal-hunter",
+        "the-beginning-after-the-end",
+        "supreme-magus",
+        "savage-divinity"
+      ]
+    },
+    {
+      "id": "korean-wave",
+      "name": "Korean Wave",
+      "description": "The best Korean web novels that took the world by storm",
+      "slugs": [
+        "solo-leveling",
+        "omniscient-readers-viewpoint",
+        "the-second-coming-of-gluttony",
+        "sss-class-suicide-hunter",
+        "the-novels-extra",
+        "the-s-classes-that-i-raised",
+        "overgeared",
+        "dungeon-defense",
+        "the-tutorial-is-too-hard",
+        "the-legendary-moonlight-sculptor",
+        "trash-of-the-counts-family",
+        "regressor-instruction-manual",
+        "the-world-after-the-fall",
+        "damn-reincarnation",
+        "return-of-the-mount-hua-sect",
+        "pick-me-up-infinite-gacha"
+      ]
+    },
+    {
+      "id": "smart-protagonists",
+      "name": "Smart Protagonists",
+      "description": "Novels where intelligence, strategy, and cunning matter more than raw power",
+      "slugs": [
+        "lord-of-the-mysteries",
+        "mother-of-learning",
+        "release-that-witch",
+        "reverend-insanity",
+        "dungeon-defense",
+        "trash-of-the-counts-family",
+        "way-of-choices",
+        "the-legendary-mechanic",
+        "warlock-of-the-magus-world",
+        "library-of-heavens-path"
+      ]
+    },
+    {
+      "id": "emotional-damage",
+      "name": "Emotional Damage",
+      "description": "Stories that will break your heart and make you thank them for it",
+      "slugs": [
+        "omniscient-readers-viewpoint",
+        "renegade-immortal",
+        "pursuit-of-the-truth",
+        "the-second-coming-of-gluttony",
+        "sss-class-suicide-hunter",
+        "perfect-world",
+        "joy-of-life",
+        "the-world-after-the-fall"
+      ]
+    },
+    {
+      "id": "hidden-gems",
+      "name": "Hidden Gems",
+      "description": "Lesser-known novels that punch far above their weight",
+      "slugs": [
+        "the-perfect-run",
+        "experimental-log-of-the-crazy-lich",
+        "chronicles-of-primordial-wars",
+        "god-of-slaughter",
+        "the-legend-of-sun-knight",
+        "regressor-instruction-manual",
+        "the-zombie-knight"
+      ]
     }
   ]
 }

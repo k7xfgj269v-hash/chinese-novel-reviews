@@ -13,6 +13,10 @@ export interface Novel {
   review: string;
   similar: string[];
   tags: string[];
+  coverUrl?: string;
+  year?: number;
+  originalLanguage?: string;
+  readingTime?: number;
 }
 
 export interface ReadingList {
@@ -111,4 +115,53 @@ export function getReadingLists(): ReadingList[] {
  */
 export function getReadingListById(id: string): ReadingList | undefined {
   return getReadingLists().find((list) => list.id === id);
+}
+
+/**
+ * Get all unique authors from all novels
+ */
+export function getAllAuthors(): string[] {
+  const authorSet = new Set<string>();
+  novels.forEach((novel) => {
+    authorSet.add(novel.author.trim());
+  });
+  return Array.from(authorSet).sort((a, b) => a.localeCompare(b));
+}
+
+/**
+ * Get novels by author (case-insensitive)
+ */
+export function getNovelsByAuthor(author: string): Novel[] {
+  const normalized = author.trim().toLowerCase();
+  return novels
+    .filter((novel) => novel.author.trim().toLowerCase() === normalized)
+    .sort((a, b) => b.rating - a.rating);
+}
+
+/**
+ * Get all unique tags from all novels
+ */
+export function getAllTags(): string[] {
+  const tagSet = new Set<string>();
+  novels.forEach((novel) => {
+    novel.tags.forEach((tag) => tagSet.add(tag));
+  });
+  return Array.from(tagSet).sort((a, b) => a.localeCompare(b));
+}
+
+/**
+ * Get novels by tag (case-insensitive)
+ */
+export function getNovelsByTag(tag: string): Novel[] {
+  const normalized = tag.trim().toLowerCase();
+  return novels
+    .filter((novel) => novel.tags.some((t) => t.trim().toLowerCase() === normalized))
+    .sort((a, b) => b.rating - a.rating);
+}
+
+/**
+ * Get all tag slugs for static generation
+ */
+export function getAllTagSlugs(): string[] {
+  return getAllTags();
 }

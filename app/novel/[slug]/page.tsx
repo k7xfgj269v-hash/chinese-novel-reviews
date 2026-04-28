@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Breadcrumb from '@/components/Breadcrumb';
 import { notFound } from 'next/navigation';
 import NovelGrid from '@/components/NovelGrid';
 import StarIcon from '@/components/StarIcon';
@@ -68,18 +69,7 @@ export default async function NovelPage({ params }: PageProps) {
         }}
       />
       <div className="container mx-auto px-4 py-8">
-        {/* Breadcrumb */}
-        <nav aria-label="Breadcrumb" className="mb-6">
-          <ol className="flex items-center space-x-2 text-sm text-gray-600">
-            <li>
-              <Link href="/" className="hover:text-blue-600">
-                Home
-              </Link>
-            </li>
-            <li>/</li>
-            <li className="text-gray-900 font-medium">{novel.title}</li>
-          </ol>
-        </nav>
+        <Breadcrumb items={[{ label: 'Home', href: '/' }, { label: novel.title }]} />
 
         {/* Novel Header */}
         <div className="bg-white rounded-xl shadow-lg p-6 mb-8">

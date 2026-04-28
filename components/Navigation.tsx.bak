@@ -77,28 +77,6 @@ export default function Navigation() {
               Lists
             </Link>
 
-            <Link
-              href="/authors"
-              className={`px-3 py-2 rounded-md text-sm font-medium ${
-                isActive('/authors')
-                  ? 'bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300'
-                  : 'text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-gray-50 dark:hover:bg-gray-800'
-              }`}
-            >
-              Authors
-            </Link>
-
-            <Link
-              href="/tags"
-              className={`px-3 py-2 rounded-md text-sm font-medium ${
-                isActive('/tags')
-                  ? 'bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300'
-                  : 'text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-gray-50 dark:hover:bg-gray-800'
-              }`}
-            >
-              Tags
-            </Link>
-
             {/* Genres Dropdown */}
             <div className="relative group">
               <button
@@ -243,30 +221,6 @@ export default function Navigation() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Reading Lists
-              </Link>
-
-              <Link
-                href="/authors"
-                className={`block px-3 py-2 rounded-md text-base font-medium ${
-                  isActive('/authors')
-                    ? 'bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300'
-                    : 'text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-gray-50 dark:hover:bg-gray-800'
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Authors
-              </Link>
-
-              <Link
-                href="/tags"
-                className={`block px-3 py-2 rounded-md text-base font-medium ${
-                  isActive('/tags')
-                    ? 'bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300'
-                    : 'text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-gray-50 dark:hover:bg-gray-800'
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Tags
               </Link>
 
               <div className="px-3 py-2">

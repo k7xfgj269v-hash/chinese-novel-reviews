@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { getAllNovels, getAllGenres } from '@/lib/novels';
+import { getAllNovels, getAllGenres, getAllAuthors, getAllTags } from '@/lib/novels';
 
 export const dynamic = 'force-static';
 
@@ -18,6 +18,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
     priority: 0.6,
+  }));
+
+  const authorPages = getAllAuthors().map((a) => ({
+    url: `${baseUrl}/author/${encodeURIComponent(a)}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.5,
+  }));
+
+  const tagPages = getAllTags().map((t) => ({
+    url: `${baseUrl}/tag/${t.toLowerCase()}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.4,
   }));
 
   const similarPages = getAllNovels().map((n) => ({
@@ -42,6 +56,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     ...novels,
     ...genres,
+    ...authorPages,
+    ...tagPages,
     ...similarPages,
   ];
 }
