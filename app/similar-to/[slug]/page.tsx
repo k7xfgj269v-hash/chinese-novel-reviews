@@ -13,14 +13,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { slug } = await params;
   const novel = getNovelBySlug(slug);
   const similarNovels = getSimilarNovels(slug);
-  
+
   if (!novel || similarNovels.length === 0) {
     return {
       title: 'Similar Novels Not Found',
       description: 'No similar novels found for the requested novel.',
     };
   }
-  
+
   return {
     title: `Novels Similar to ${novel.title} - Recommendations`,
     description: `Find ${similarNovels.length} Chinese web novels similar to ${novel.title}. Read English reviews and ratings of similar cultivation, fantasy, and xianxia novels.`,
@@ -36,7 +36,7 @@ export default async function SimilarToPage({ params }: PageProps) {
   const { slug } = await params;
   const novel = getNovelBySlug(slug);
   const similarNovels = getSimilarNovels(slug);
-  
+
   if (!novel || similarNovels.length === 0) {
     notFound();
   }
@@ -45,7 +45,7 @@ export default async function SimilarToPage({ params }: PageProps) {
     <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto px-4 py-8">
         {/* Breadcrumb */}
-        <nav className="mb-6">
+        <nav aria-label="Breadcrumb" className="mb-6">
           <ol className="flex items-center space-x-2 text-sm text-gray-600">
             <li>
               <Link href="/" className="hover:text-blue-600">
@@ -71,7 +71,8 @@ export default async function SimilarToPage({ params }: PageProps) {
                 Novels Similar to <span className="text-blue-600">{novel.title}</span>
               </h1>
               <p className="text-gray-600">
-                If you enjoyed {novel.title}, you might like these {similarNovels.length} similar Chinese web novels
+                If you enjoyed {novel.title}, you might like these {similarNovels.length} similar
+                Chinese web novels
               </p>
             </div>
             <Link
@@ -111,7 +112,9 @@ export default async function SimilarToPage({ params }: PageProps) {
                 </div>
                 <div className="flex items-center justify-between mb-3">
                   <div className="text-sm text-gray-500">Status</div>
-                  <div className={`px-2 py-1 text-xs rounded-full ${novel.status === 'completed' ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800'}`}>
+                  <div
+                    className={`px-2 py-1 text-xs rounded-full ${novel.status === 'completed' ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800'}`}
+                  >
                     {novel.status === 'completed' ? 'Completed' : 'Ongoing'}
                   </div>
                 </div>
@@ -130,11 +133,9 @@ export default async function SimilarToPage({ params }: PageProps) {
             <h2 className="text-2xl font-bold text-gray-900">
               {similarNovels.length} Similar Novel{similarNovels.length !== 1 ? 's' : ''}
             </h2>
-            <div className="text-gray-600">
-              Sorted by rating (highest first)
-            </div>
+            <div className="text-gray-600">Sorted by rating (highest first)</div>
           </div>
-          <NovelGrid 
+          <NovelGrid
             novels={similarNovels}
             description={`These novels share similar themes, genres, or storytelling styles with ${novel.title}`}
           />
@@ -142,7 +143,9 @@ export default async function SimilarToPage({ params }: PageProps) {
 
         {/* Why These Are Similar */}
         <div className="bg-white rounded-xl shadow-lg p-6 mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Why these novels are similar to {novel.title}</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            Why these novels are similar to {novel.title}
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Shared Genres</h3>
@@ -157,7 +160,8 @@ export default async function SimilarToPage({ params }: PageProps) {
                 ))}
               </div>
               <p className="text-gray-600 mt-3">
-                These novels share one or more genres with {novel.title}, ensuring similar thematic elements and storytelling styles.
+                These novels share one or more genres with {novel.title}, ensuring similar thematic
+                elements and storytelling styles.
               </p>
             </div>
             <div>
@@ -173,7 +177,8 @@ export default async function SimilarToPage({ params }: PageProps) {
                 ))}
               </div>
               <p className="text-gray-600 mt-3">
-                Look for shared tags like cultivation systems, character archetypes, or plot structures that make these stories resonate with fans of {novel.title}.
+                Look for shared tags like cultivation systems, character archetypes, or plot
+                structures that make these stories resonate with fans of {novel.title}.
               </p>
             </div>
           </div>
@@ -181,10 +186,7 @@ export default async function SimilarToPage({ params }: PageProps) {
 
         {/* Navigation Links */}
         <div className="flex justify-between">
-          <Link
-            href="/"
-            className="px-4 py-2 text-gray-600 hover:text-gray-900 hover:underline"
-          >
+          <Link href="/" className="px-4 py-2 text-gray-600 hover:text-gray-900 hover:underline">
             ← Back to all novels
           </Link>
           <div className="flex gap-3">

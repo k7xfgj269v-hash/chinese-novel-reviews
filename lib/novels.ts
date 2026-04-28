@@ -28,16 +28,16 @@ export function getAllNovels(): Novel[] {
  * Get a novel by its slug
  */
 export function getNovelBySlug(slug: string): Novel | undefined {
-  return novels.find(novel => novel.slug === slug);
+  return novels.find((novel) => novel.slug === slug);
 }
 
 /**
  * Get novels by genre
  */
 export function getNovelsByGenre(genre: string): Novel[] {
-  return novels.filter(novel => 
-    novel.genre.map(g => g.toLowerCase()).includes(genre.toLowerCase())
-  ).sort((a, b) => b.rating - a.rating);
+  return novels
+    .filter((novel) => novel.genre.map((g) => g.toLowerCase()).includes(genre.toLowerCase()))
+    .sort((a, b) => b.rating - a.rating);
 }
 
 /**
@@ -46,10 +46,10 @@ export function getNovelsByGenre(genre: string): Novel[] {
 export function getSimilarNovels(slug: string): Novel[] {
   const novel = getNovelBySlug(slug);
   if (!novel) return [];
-  
-  return novels.filter(n => 
-    novel.similar.includes(n.slug) && n.slug !== slug
-  ).sort((a, b) => b.rating - a.rating);
+
+  return novels
+    .filter((n) => novel.similar.includes(n.slug) && n.slug !== slug)
+    .sort((a, b) => b.rating - a.rating);
 }
 
 /**
@@ -57,8 +57,8 @@ export function getSimilarNovels(slug: string): Novel[] {
  */
 export function getAllGenres(): string[] {
   const genreSet = new Set<string>();
-  novels.forEach(novel => {
-    novel.genre.forEach(g => genreSet.add(g));
+  novels.forEach((novel) => {
+    novel.genre.forEach((g) => genreSet.add(g));
   });
   return Array.from(genreSet).sort();
 }
@@ -67,7 +67,7 @@ export function getAllGenres(): string[] {
  * Get all novel slugs for static generation
  */
 export function getAllNovelSlugs(): string[] {
-  return novels.map(novel => novel.slug);
+  return novels.map((novel) => novel.slug);
 }
 
 /**

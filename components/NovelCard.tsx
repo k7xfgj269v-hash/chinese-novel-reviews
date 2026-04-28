@@ -13,9 +13,7 @@ export default function NovelCard({ novel }: NovelCardProps) {
         <div className="flex justify-between items-start mb-4">
           <div>
             <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-              <Link href={`/novel/${novel.slug}`}>
-                {novel.title}
-              </Link>
+              <Link href={`/novel/${novel.slug}`}>{novel.title}</Link>
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mt-1">by {novel.author}</p>
           </div>
@@ -24,7 +22,9 @@ export default function NovelCard({ novel }: NovelCardProps) {
               <StarIcon />
               <span className="font-bold">{novel.rating.toFixed(1)}</span>
             </div>
-            <span className={`mt-2 px-2 py-1 text-xs rounded-full ${novel.status === 'completed' ? 'bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-300' : 'bg-yellow-100 dark:bg-yellow-900/50 text-yellow-800 dark:text-yellow-300'}`}>
+            <span
+              className={`mt-2 px-2 py-1 text-xs rounded-full ${novel.status === 'completed' ? 'bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-300' : 'bg-yellow-100 dark:bg-yellow-900/50 text-yellow-800 dark:text-yellow-300'}`}
+            >
               {novel.status === 'completed' ? 'Completed' : 'Ongoing'}
             </span>
           </div>
@@ -54,19 +54,23 @@ export default function NovelCard({ novel }: NovelCardProps) {
           </div>
         </div>
 
-        <p className="text-gray-700 dark:text-gray-300 line-clamp-3 mb-4">
-          {novel.summary}
-        </p>
+        <p className="text-gray-700 dark:text-gray-300 line-clamp-3 mb-4">{novel.summary}</p>
 
         <div className="flex justify-between items-center text-sm text-gray-500 dark:text-gray-400">
           <div className="flex items-center">
             <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+              />
             </svg>
             <span>{novel.chapters.toLocaleString()} chapters</span>
           </div>
           <Link
             href={`/novel/${novel.slug}`}
+            aria-label={`Read review of ${novel.title}`}
             className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium hover:underline"
           >
             Read review

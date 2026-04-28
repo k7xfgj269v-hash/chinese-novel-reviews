@@ -29,10 +29,7 @@ export default function GenreLoading() {
           <div className="h-6 w-44 bg-gray-200 rounded animate-pulse mb-3" />
           <div className="flex flex-wrap gap-2">
             {[...Array(8)].map((_, i) => (
-              <div
-                key={i}
-                className="h-9 w-20 bg-gray-200 rounded-lg animate-pulse"
-              />
+              <div key={i} className="h-9 w-20 bg-gray-200 rounded-lg animate-pulse" />
             ))}
           </div>
         </div>

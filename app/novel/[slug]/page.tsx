@@ -12,14 +12,14 @@ interface PageProps {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const novel = getNovelBySlug(slug);
-  
+
   if (!novel) {
     return {
       title: 'Novel Not Found',
       description: 'The requested novel could not be found.',
     };
   }
-  
+
   return {
     title: `${novel.title} - Chinese Novel Review`,
     description: `${novel.summary.substring(0, 150)}... Read our detailed English review.`,
@@ -34,11 +34,11 @@ export async function generateStaticParams() {
 export default async function NovelPage({ params }: PageProps) {
   const { slug } = await params;
   const novel = getNovelBySlug(slug);
-  
+
   if (!novel) {
     notFound();
   }
-  
+
   const similarNovels = getSimilarNovels(slug);
 
   return (
@@ -48,28 +48,28 @@ export default async function NovelPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Book",
-            "name": novel.title,
-            "author": {
-              "@type": "Person",
-              "name": novel.author,
+            '@context': 'https://schema.org',
+            '@type': 'Book',
+            name: novel.title,
+            author: {
+              '@type': 'Person',
+              name: novel.author,
             },
-            "description": novel.summary,
-            "genre": novel.genre,
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": novel.rating,
-              "bestRating": 5,
-              "ratingCount": Math.round(novel.rating * 100),
+            description: novel.summary,
+            genre: novel.genre,
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ratingValue: novel.rating,
+              bestRating: 5,
+              ratingCount: Math.round(novel.rating * 100),
             },
-            "numberOfPages": novel.chapters * 10,
+            numberOfPages: novel.chapters * 10,
           }),
         }}
       />
       <div className="container mx-auto px-4 py-8">
         {/* Breadcrumb */}
-        <nav className="mb-6">
+        <nav aria-label="Breadcrumb" className="mb-6">
           <ol className="flex items-center space-x-2 text-sm text-gray-600">
             <li>
               <Link href="/" className="hover:text-blue-600">
@@ -100,7 +100,9 @@ export default async function NovelPage({ params }: PageProps) {
                     <span className="ml-1 text-sm">/ 5.0</span>
                   </div>
                   <div className="flex gap-3">
-                    <span className={`px-3 py-1 rounded-full text-sm ${novel.status === 'completed' ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800'}`}>
+                    <span
+                      className={`px-3 py-1 rounded-full text-sm ${novel.status === 'completed' ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800'}`}
+                    >
                       {novel.status === 'completed' ? 'Completed' : 'Ongoing'}
                     </span>
                     <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">
@@ -159,7 +161,9 @@ export default async function NovelPage({ params }: PageProps) {
                   </div>
                   <div>
                     <div className="text-sm text-gray-500">Status</div>
-                    <div className="font-medium">{novel.status === 'completed' ? 'Completed' : 'Currently Publishing'}</div>
+                    <div className="font-medium">
+                      {novel.status === 'completed' ? 'Completed' : 'Currently Publishing'}
+                    </div>
                   </div>
                   <div>
                     <div className="text-sm text-gray-500">Chapters</div>
@@ -191,10 +195,8 @@ export default async function NovelPage({ params }: PageProps) {
         {similarNovels.length > 0 && (
           <div className="mb-8">
             <div className="flex justify-between items-center mb-6">
-              <h2 className="text-2xl font-bold text-gray-900">
-                Similar Novels
-              </h2>
-              <Link 
+              <h2 className="text-2xl font-bold text-gray-900">Similar Novels</h2>
+              <Link
                 href={`/similar-to/${novel.slug}`}
                 className="text-blue-600 hover:text-blue-800 font-medium"
               >
@@ -207,10 +209,7 @@ export default async function NovelPage({ params }: PageProps) {
 
         {/* Navigation Links */}
         <div className="flex justify-between">
-          <Link
-            href="/"
-            className="px-4 py-2 text-gray-600 hover:text-gray-900 hover:underline"
-          >
+          <Link href="/" className="px-4 py-2 text-gray-600 hover:text-gray-900 hover:underline">
             ← Back to all novels
           </Link>
           {similarNovels.length > 0 && (
