@@ -90,6 +90,7 @@ export default function SearchBar({ novels }: { novels: Novel[] }) {
                 key={novel.slug}
                 href={`/novel/${novel.slug}`}
                 role="option"
+                aria-selected={false}
                 className="block px-4 py-3 hover:bg-gray-50 dark:hover:bg-gray-750 border-b border-gray-100 dark:border-gray-700 last:border-0"
               >
                 <div className="font-medium text-gray-900 dark:text-gray-100">{novel.title}</div>

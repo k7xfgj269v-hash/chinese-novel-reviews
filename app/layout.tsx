@@ -54,7 +54,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.className} suppressHydrationWarning style={{ visibility: 'hidden' }}>
+    <html
+      lang="en"
+      className={inter.className}
+      suppressHydrationWarning
+      style={{ visibility: 'hidden' }}
+    >
       <head>
         <script
           dangerouslySetInnerHTML={{

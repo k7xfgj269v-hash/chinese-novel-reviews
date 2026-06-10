@@ -1,29 +1,42 @@
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useMemo, useSyncExternalStore } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { getAllGenres } from '@/lib/novels';
 
+// The `dark` class on <html> is external (DOM) state, set by a pre-hydration
+// script in layout.tsx. Subscribe to it instead of mirroring it into React
+// state, so the toggle icon stays in sync without a setState-in-effect.
+function subscribeToTheme(callback: () => void) {
+  const observer = new MutationObserver(callback);
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['class'],
+  });
+  return () => observer.disconnect();
+}
+
 export default function Navigation() {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [dark, setDark] = useState(false);
   const [isGenreOpen, setIsGenreOpen] = useState(false);
   const genres = useMemo(() => getAllGenres(), []);
 
-  useEffect(() => {
-    const isDark = document.documentElement.classList.contains('dark');
-    setDark(isDark);
-  }, []);
+  const dark = useSyncExternalStore(
+    subscribeToTheme,
+    () => document.documentElement.classList.contains('dark'),
+    () => false, // server snapshot: assume light during static prerender
+  );
 
   function toggleDark() {
-    const next = !dark;
-    setDark(next);
+    const next = !document.documentElement.classList.contains('dark');
     document.documentElement.classList.toggle('dark', next);
     try {
       localStorage.setItem('theme', next ? 'dark' : 'light');
-    } catch (e) {}
+    } catch {
+      // localStorage may be unavailable (private mode); theme just won't persist
+    }
   }
 
   const isActive = (path: string) => {
