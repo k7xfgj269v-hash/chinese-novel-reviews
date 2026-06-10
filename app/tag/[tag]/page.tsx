@@ -30,7 +30,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export async function generateStaticParams() {
-  const tags = getAllTags();
+  // Lowercase to match the links (/tag/${t.toLowerCase()}) and sitemap; dedupe
+  // so two tags differing only by case can't emit a duplicate static path.
+  const tags = [...new Set(getAllTags().map((t) => t.toLowerCase()))];
   return tags.map((tag) => ({ tag }));
 }
 

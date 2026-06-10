@@ -15,7 +15,15 @@ export default function NovelCard({ novel }: NovelCardProps) {
             <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
               <Link href={`/novel/${novel.slug}`}>{novel.title}</Link>
             </h2>
-            <p className="text-gray-600 dark:text-gray-400 mt-1">by {novel.author}</p>
+            <p className="text-gray-600 dark:text-gray-400 mt-1">
+              by{' '}
+              <Link
+                href={`/author/${encodeURIComponent(novel.author)}`}
+                className="hover:text-blue-600 dark:hover:text-blue-400 hover:underline transition-colors"
+              >
+                {novel.author}
+              </Link>
+            </p>
           </div>
           <div className="flex flex-col items-end">
             <div className="flex items-center bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-300 px-3 py-1 rounded-full">
@@ -44,12 +52,13 @@ export default function NovelCard({ novel }: NovelCardProps) {
           </div>
           <div className="flex flex-wrap gap-1">
             {novel.tags.slice(0, 4).map((tag) => (
-              <span
+              <Link
                 key={tag}
-                className="px-2 py-1 bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-300 text-xs rounded"
+                href={`/tag/${tag.toLowerCase()}`}
+                className="px-2 py-1 bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-300 text-xs rounded hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors"
               >
                 {tag}
-              </span>
+              </Link>
             ))}
           </div>
         </div>

@@ -4,7 +4,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 import { notFound } from 'next/navigation';
 import NovelGrid from '@/components/NovelGrid';
 import StarIcon from '@/components/StarIcon';
-import { getNovelBySlug, getSimilarNovels, getAllNovelSlugs, Novel } from '@/lib/novels';
+import { getNovelBySlug, getSimilarNovels, getAllNovelSlugs } from '@/lib/novels';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -81,7 +81,15 @@ export default async function NovelPage({ params }: PageProps) {
                   <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
                     {novel.title}
                   </h1>
-                  <p className="text-xl text-gray-600 mb-4">by {novel.author}</p>
+                  <p className="text-xl text-gray-600 mb-4">
+                    by{' '}
+                    <Link
+                      href={`/author/${encodeURIComponent(novel.author)}`}
+                      className="hover:text-blue-600 hover:underline transition-colors"
+                    >
+                      {novel.author}
+                    </Link>
+                  </p>
                 </div>
                 <div className="flex flex-col items-start sm:items-end gap-3">
                   <div className="flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
@@ -123,12 +131,13 @@ export default async function NovelPage({ params }: PageProps) {
                 <h3 className="text-sm font-semibold text-gray-500 mb-2">TAGS</h3>
                 <div className="flex flex-wrap gap-2">
                   {novel.tags.map((tag) => (
-                    <span
+                    <Link
                       key={tag}
-                      className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm"
+                      href={`/tag/${tag.toLowerCase()}`}
+                      className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm hover:bg-blue-100 transition-colors"
                     >
                       {tag}
-                    </span>
+                    </Link>
                   ))}
                 </div>
               </div>
