@@ -139,6 +139,20 @@ export function getNovelsByAuthor(author: string): Novel[] {
 }
 
 /**
+ * Get all authors with how many novels each has, sorted by count then name
+ */
+export function getAuthorsWithCounts(): { name: string; count: number }[] {
+  const counts = new Map<string, number>();
+  novels.forEach((novel) => {
+    const name = novel.author.trim();
+    counts.set(name, (counts.get(name) ?? 0) + 1);
+  });
+  return Array.from(counts, ([name, count]) => ({ name, count })).sort(
+    (a, b) => b.count - a.count || a.name.localeCompare(b.name),
+  );
+}
+
+/**
  * Get all unique tags from all novels
  */
 export function getAllTags(): string[] {
@@ -164,4 +178,20 @@ export function getNovelsByTag(tag: string): Novel[] {
  */
 export function getAllTagSlugs(): string[] {
   return getAllTags();
+}
+
+/**
+ * Get all tags with how many novels each has, sorted by count then name
+ */
+export function getTagsWithCounts(): { name: string; count: number }[] {
+  const counts = new Map<string, number>();
+  novels.forEach((novel) => {
+    novel.tags.forEach((tag) => {
+      const name = tag.trim();
+      counts.set(name, (counts.get(name) ?? 0) + 1);
+    });
+  });
+  return Array.from(counts, ([name, count]) => ({ name, count })).sort(
+    (a, b) => b.count - a.count || a.name.localeCompare(b.name),
+  );
 }

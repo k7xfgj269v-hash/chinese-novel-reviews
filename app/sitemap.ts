@@ -1,5 +1,11 @@
 import { MetadataRoute } from 'next';
-import { getAllNovels, getAllGenres, getAllAuthors, getAllTags } from '@/lib/novels';
+import {
+  getAllNovels,
+  getAllGenres,
+  getAllAuthors,
+  getAllTags,
+  getReadingLists,
+} from '@/lib/novels';
 
 export const dynamic = 'force-static';
 
@@ -41,6 +47,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.5,
   }));
 
+  const listPages = getReadingLists().map((l) => ({
+    url: `${baseUrl}/lists/${l.id}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.6,
+  }));
+
+  const indexPages = ['/lists', '/authors', '/tags'].map((path) => ({
+    url: baseUrl + path,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.9,
+  }));
+
   return [
     {
       url: baseUrl,
@@ -48,16 +68,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: 'weekly',
       priority: 1,
     },
-    {
-      url: baseUrl + '/lists',
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
+    ...indexPages,
     ...novels,
     ...genres,
     ...authorPages,
     ...tagPages,
     ...similarPages,
+    ...listPages,
   ];
 }
